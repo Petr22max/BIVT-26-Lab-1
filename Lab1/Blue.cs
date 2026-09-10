@@ -115,6 +115,16 @@
             bool answer = false;
 
             // code here
+            int s = a / 2 + b / 2 + c / 2;
+            int n = 0;
+
+            if (s % 3 == 0)
+                n = s / 3;
+            else if ((s + 1) % 3 == 0)
+                n = (s + 1) / 3;
+
+            if (n >= 1 && n <= a && n <= b && n <= c)
+                answer = true;
             
             // end
 
