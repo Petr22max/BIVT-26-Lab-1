@@ -7,6 +7,10 @@
             bool answer = false;
 
             // code here
+            if (a>0 && b>0)
+                answer = True;
+            if (a<0 && b<0)
+                answer = True;
 
 
             // end
@@ -18,6 +22,7 @@
             bool answer = false;
 
             // code here
+            answer = Math.Abs(d % 1) >= 0.0001;
 
             // end
 
@@ -28,6 +33,9 @@
             bool answer = false;
 
             // code here
+            if (b != 0)
+                if (a%b==0)
+                    answer = true;
 
             // end
 
@@ -38,6 +46,13 @@
             double answer = 0;
 
             // code here
+            answer = d;
+
+            if (Math.Abs(f) > Math.Abs(answer))
+                answer = f;
+
+            if (Math.Abs(g) > Math.Abs(answer))
+                answer = g;
 
             // end
 
@@ -48,16 +63,25 @@
             double answer = 0;
 
             // code here
+            if (x<=-1)
+                answer = 0;
+            if (x>-1 && x<=0)
+                answer= x+1;
+            else
+                answer = 1;
 
             // end
 
             return answer;
         }
-        public bool Task6(double circleS, double squareS)
+        public bool Task6(d
+                          ouble circleS, double squareS)
         {
             bool answer = false;
 
             // code here
+            if (Math.Pow(circleS/Math.PI,0.5) <= (Math.Pow(squareS,0.5)/2))
+                answer = true
 
             // end
 
