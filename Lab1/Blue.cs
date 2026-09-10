@@ -92,7 +92,20 @@
             int answer = 0;
 
             // code here
+            if (Math.Abs(d) < Math.Abs(f))
+            {
+            if (d > 0)
+                answer = -1;
+            }
 
+            if (Math.Abs(d) > Math.Abs(f))
+            {
+            if (f > 0)
+                answer = 1;
+            } 
+            
+             
+        
             // end
 
             return answer;
