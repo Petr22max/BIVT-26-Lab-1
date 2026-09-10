@@ -121,6 +121,24 @@ namespace Lab1
             const int bank = 10000;
 
             // code here
+            int a = pupils / 7;
+
+            if (pupils % 7 != 0)
+                a = a + 1;
+
+            int money = a * salary + pupils * 5;
+
+            bool leap = false;
+
+            if (year % 400 == 0)
+                leap = true;
+            else if (year % 100 == 0)
+                leap = false;
+            else if (year % 4 == 0)
+                leap = true;
+
+            if (money <= bank && leap == false)
+                answer = true;
             
             // end
 
