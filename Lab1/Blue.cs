@@ -8,9 +8,9 @@
 
             // code here
             if (a>0 && b>0)
-                answer = True;
+                answer = true;
             if (a<0 && b<0)
-                answer = True;
+                answer = true;
 
 
             // end
@@ -65,7 +65,7 @@
             // code here
             if (x<=-1)
                 answer = 0;
-            if (x>-1 && x<=0)
+            else if (x>-1 && x<=0)
                 answer= x+1;
             else
                 answer = 1;
@@ -74,14 +74,13 @@
 
             return answer;
         }
-        public bool Task6(d
-                          ouble circleS, double squareS)
+        public bool Task6(double circleS, double squareS)
         {
             bool answer = false;
 
             // code here
             if (Math.Pow(circleS/Math.PI,0.5) <= (Math.Pow(squareS,0.5)/2))
-                answer = true
+                answer = true;
 
             // end
 
